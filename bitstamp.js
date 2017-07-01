@@ -271,6 +271,13 @@ Bitstamp.prototype.ripple_withdrawal = function(amount, address, currency, callb
   }, true);
 }
 
+Bitstamp.prototype.xrp_withdrawal = function(amount, address, currency, callback) {
+  this._post(null, 'xrp_withdrawal', callback, {
+    amount: amount,
+    address: address
+  }, true);
+}
+
 Bitstamp.prototype.ripple_address = function(callback) {
   this._post(null, 'ripple_address', callback, null, true);
 }
