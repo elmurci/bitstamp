@@ -8,9 +8,9 @@ var publicBitstamp = new Bitstamp();
 // publicBitstamp.order_book('btcusd', false, console.log);
 // publicBitstamp.eur_usd(console.log);
 
-var key = 'your-key';
-var secret = 'your-secret';
-var client_id = 'your-bitstamp-user-id';
+var key = 'tltsQLdS19ANx2c1PMJPSlcmwWgrU5dA';
+var secret = 'tu9m2Mlct9JOchEEAeUxjpM8o9aKfEWW';
+var client_id = 'julp3934';
 var privateBitstamp = new Bitstamp(key, secret, client_id);
 
 //    commented out for your protection
@@ -18,7 +18,7 @@ var privateBitstamp = new Bitstamp(key, secret, client_id);
 // privateBitstamp.balance(null, console.log);
 // privateBitstamp.user_transactions('btceur', {limit: 10, offset: 5, sort: 'asc'}, console.log);
 // privateBitstamp.open_orders('btcusd', console.log);
-// privateBitstamp.order_status(id, console.log);
+privateBitstamp.order_status('352764360', console.log);
 // privateBitstamp.cancel_order(id, console.log);
 // privateBitstamp.cancel_all_orders(console.log)
 // privateBitstamp.buy('btcusd', amount, price, limit_price, console.log);
